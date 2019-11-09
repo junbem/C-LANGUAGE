@@ -17,41 +17,39 @@
  마지막 노드가 첫번째 노드를 가르켜서 계속 회전할 수 있게 만들어진 리스트
  
  # 1-3. 예시코드
-#include <stdio.h>
-#include <stdlib.h>
-typedef struct list {
- int d;
- struct list* p;
-} LIST;
-LIST* root = NULL;
-LIST* last = NULL;
-int main(void){
- LIST* r = (LIST*)malloc(sizeof(LIST));
- r->d = 35;
- r->p = NULL; 
- root = r;
- last = r;
- 
+ ```C
+#include <stdio.h>  
+#include <stdlib.h>  
+typedef struct list {  
+ int d;  
+ struct list* p;  
+} LIST;  
+LIST* root = NULL;  
+LIST* last = NULL;  
+int main(void){  
+ LIST* r = (LIST*)malloc(sizeof(LIST));  
+ r->d = 35;  
+ r->p = NULL;   
+ root = r;  
+ last = r;  
  r = (LIST*)malloc(sizeof(LIST));
  last->p = r;
  r->d = 40;
  r->p = NULL;
  last = r;
- 
  r = (LIST*)malloc(sizeof(LIST));
  last->p = r;
  r->d = 45;
  r->p = NULL;
  last = r;
- 
  while(root){
   printf("%d\n", root->d);
   root = root->p;
  }
 }
-
+```
 함수를 이용할 때
-
+```C
 #include <stdio.h>
 #include <stdlib.h>
 typedef struct list {
@@ -77,7 +75,7 @@ int main(void){
   root = root->p;
  }
 }
-
+```
 # 2-1. 트리
 
 ![캡처](https://user-images.githubusercontent.com/50951220/68526272-5ac4c000-031d-11ea-987d-06f21e20b2cb.PNG)
@@ -101,7 +99,7 @@ int main(void){
 ![캡처2](https://user-images.githubusercontent.com/50951220/68526420-1cc89b80-031f-11ea-8cdf-dff11ae6bf11.PNG)
 
 # 2-3. 예시코드
-	
+```C	
 #include <stdlib.h>               
 typedef struct Tree {
     struct Tr *l, *r;
@@ -125,7 +123,7 @@ int main(void){
     r= (T*)mem(); r->d=5; r->l=l1;  r->r=r1;
     print(r);
 }
-
+```
 # 3-1. 그래프 
 
  그래프는 실제 세계의 현상이나 사물을 정점(Vertex)와 간선(Edge)으로 표현을 하기 위해 사용한다.
@@ -143,7 +141,7 @@ int main(void){
  정점 간의 간선이 방향이 없을 경우
  
  # 3-3. 예시코드
- 
+ ```C
 #include <stdio.h>
 #include <stdlib.h>
 #include <memory.h>
@@ -253,7 +251,7 @@ void ViewOutdegree(Graph *g)
     }
     printf("\n");
 }
-
+```
 
 
 

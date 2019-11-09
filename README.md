@@ -4,15 +4,15 @@
 
 # 1-2. 리스트의 종류 
 
-Singly Linked List
+# Singly Linked List
  
  노드안에 링크가 1개이고 단방향으로 진행하는 리스트
  
-Doubly Linked List
+# Doubly Linked List
 
  노드안에 링크가 2개이고 양방향으로 진행할 수 있는 리스트
  
-Circular Linked List
+# Circular Linked List
 
  마지막 노드가 첫번째 노드를 가르켜서 계속 회전할 수 있게 만들어진 리스트
  
@@ -81,5 +81,23 @@ int main(void){
 
 # 2-1. 트리
 
+![캡처](https://user-images.githubusercontent.com/50951220/68526272-5ac4c000-031d-11ea-987d-06f21e20b2cb.PNG)
+
+ 트리는 대용량의 자료를 다룰 때 효과적이다.(자료의 삽입, 삭제, 검색이 빠르다.)
+
+# 2-2. 트리의 종류
+
+# 2진트리(Binary Tree)
+
+ 2진트리는 차수의 개수가 2개 이하인 트리를 말한다. 차수는 얼마든지 늘릴 수 있지만, 기본적으로 2진트리를 많이 사용한다.
+
+# Ternary Tree
+
+ 노드에 차일드가 3개씩 붙는 트리를 말한다. 
+
+# 트리의 순회 
+
+트리의 순회는 재귀 방식을 사용한다. printf의 위치에 따라 3가지의 출력순서가 있다.
 
 
+	

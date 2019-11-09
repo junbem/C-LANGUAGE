@@ -134,5 +134,5 @@ int main(void){
 # 3-2. 그래프의 종류
 
  # 유향 그래프(Directed Graph) 
- 
- 
+ ![캡처3](https://user-images.githubusercontent.com/50951220/68526641-9c576a00-0321-11ea-9159-c8d48a01cda7.PNG)
+

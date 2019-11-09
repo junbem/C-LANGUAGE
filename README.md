@@ -16,9 +16,8 @@
 
  마지막 노드가 첫번째 노드를 가르켜서 계속 회전할 수 있게 만들어진 리스트
  
- # 1-3. 예제코드
- 
- #include <stdio.h>
+ # 1-3. 예시코드
+#include <stdio.h>
 #include <stdlib.h>
 typedef struct list {
  int d;
@@ -99,5 +98,41 @@ int main(void){
 
 트리의 순회는 재귀 방식을 사용한다. printf의 위치에 따라 3가지의 출력순서가 있다.
 
+![캡처2](https://user-images.githubusercontent.com/50951220/68526420-1cc89b80-031f-11ea-8cdf-dff11ae6bf11.PNG)
 
+# 2-3. 예시코드
 	
+#include <stdlib.h>               
+typedef struct Tree {
+    struct Tr *l, *r;
+    int d;
+} T;
+void print(T* p){
+   printf("%d\n", p->d);
+   if(p->l) print(p->l);
+   if(p->r) print(p->r);    
+}
+T* mem(){
+ T* p=(T*)malloc(sizeof(T));
+ p->l=p->r=NULL;
+ return(p);
+}
+int main(void){
+    T *r, *r1, *r2, *l1;
+    l1= (T*)mem(); l1->d=3; 
+    r2= (T*)mem(); r2->d=8; 
+    r1= (T*)mem(); r1->d=7; r1->r=r2;
+    r= (T*)mem(); r->d=5; r->l=l1;  r->r=r1;
+    print(r);
+}
+
+# 3-1. 그래프 
+
+ 그래프는 실제 세계의 현상이나 사물을 정점(Vertex)와 간선(Edge)으로 표현을 하기 위해 사용한다.
+그래프는 간단한 실생활에서 적용할 수 있고, 많은 알고리즘에 이용될 수 있다. 그래프는 최단거리 알고리즘(다익스트라, 벨만포드), 네트워크 플로우, 최소 스패닝 트리, DFS, BFS 등등에 이용된다. 
+
+# 3-2. 그래프의 종류
+
+ # 유향 그래프(Directed Graph) 
+ 
+ 

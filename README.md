@@ -78,3 +78,8 @@ int main(void){
   root = root->p;
  }
 }
+
+# 2-1. 트리
+
+
+
